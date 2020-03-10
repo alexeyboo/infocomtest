@@ -28,7 +28,7 @@ public final class GraphUtils {
 			String s2 = vertex.getValue()[1];
 			String s3 = vertex.getValue()[2];
 
-			if (!s1.equals("\"\"")) {
+			if (!s1.equals("\"\"") && !s1.isEmpty()) {
 				if (firstElems.containsKey(s1)) {
 					firstElems.get(s1).add(vertex);
 				} else {
@@ -36,7 +36,7 @@ public final class GraphUtils {
 				}
 			}
 
-			if (!s2.equals("\"\"")) {
+			if (!s2.equals("\"\"") && !s2.isEmpty()) {
 				if (secondElems.containsKey(s2)) {
 					secondElems.get(s2).add(vertex);
 				} else {
@@ -44,7 +44,7 @@ public final class GraphUtils {
 				}
 			}
 
-			if (!s3.equals("\"\"")) {
+			if (!s3.equals("\"\"") && !s3.isEmpty()) {
 				if (thirdElems.containsKey(s3)) {
 					thirdElems.get(s3).add(vertex);
 				} else {
