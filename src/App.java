@@ -11,7 +11,7 @@ import java.util.*;
 public class App {
 	public static void main(String[] args) throws IOException {
 		long time1 = System.currentTimeMillis();
-		BufferedReader file = IOUtils.getFile("src\\resources\\lng.csv");
+		BufferedReader file = IOUtils.getFile("src\\resources\\lng-big.csv");
 		Set<Vertex> graph = ParserUtils.getSetGraph(ParserUtils.PATTERN_1, file);
 		Set<Set<Vertex>> groups = GraphUtils.getGroups(graph);
 
